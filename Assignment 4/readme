@@ -1,0 +1,4 @@
+A simple E-commerce backend API built using FastAPI.
+This project demonstrates product management, order processing, cart functionality, and checkout logic.
+
+It is designed as a learning project to understand REST APIs, request validation, and API design using FastAPI.
