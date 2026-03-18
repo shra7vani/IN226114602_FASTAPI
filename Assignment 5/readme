@@ -1,0 +1,85 @@
+# 🔍 FastAPI Product API (Search, Sort & Pagination)
+
+This project demonstrates how to implement **searching, sorting, and pagination** in FastAPI using query parameters.
+
+---
+
+## 🚀 Features
+
+* 🔍 Search products by keyword (case-insensitive)
+* 🔄 Sort products (by price or name)
+* 📄 Paginate results (page & limit)
+* 🔗 Combined API (filter + sort + paginate)
+
+---
+
+## ▶️ How to Run
+
+1. Install dependencies:
+
+```bash
+pip install fastapi uvicorn
+```
+
+2. Start server:
+
+```bash
+uvicorn main:app --reload
+```
+
+3. Open Swagger UI:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## 📌 API Endpoints
+
+### 🔍 Search Products
+
+```
+GET /products/search?keyword=mouse
+```
+
+* Returns products whose name contains the keyword
+* Case-insensitive search
+
+---
+
+### 🔄 Sort Products
+
+```
+GET /products/sort?sort_by=price&order=asc
+```
+
+* `sort_by`: price or name
+* `order`: asc or desc
+
+---
+
+### 📄 Pagination
+
+```
+GET /products/page?page=1&limit=2
+```
+
+* `page`: page number (default = 1)
+* `limit`: items per page
+
+---
+
+### 🔗 Browse (Search + Sort + Pagination)
+
+```
+GET /products/browse
+GET /products/browse?keyword=e&sort_by=price&order=asc&page=1&limit=2
+GET /products/browse?sort_by=name&order=desc&page=1&limit=2
+```
+
+---
+
+
+
+
