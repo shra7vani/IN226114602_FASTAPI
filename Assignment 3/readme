@@ -1,0 +1,13 @@
+➕➖ FastAPI Product API (Add & Delete)
+
+This module demonstrates how to add and delete products using FastAPI.
+
+🚀 Features
+
+➕ Add a new product
+
+❌ Delete an existing product
+
+✅ Basic validation using Pydantic
+
+⚠️ Error handling for duplicate or missing products
